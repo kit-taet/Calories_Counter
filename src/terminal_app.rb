@@ -42,9 +42,11 @@ userop = gets.to_i
   case userop
 
     when 1
+     
       calculate_cal
 
     when 2
+      
       list
 
     when 3
@@ -52,15 +54,12 @@ userop = gets.to_i
       system 'clear'
       doneplaying = Artii::Base.new :font => 'slant'
       puts (doneplaying.asciify("Thankyou For Using")).colorize(:cyan)
-      #return 0
-      #break
+   
               
     else  
       puts "Please choose your options again 1,2 or 3".colorize(:red)
       puts ("-----------------------------------------------------------------------")
-      #sleep 0.5
-      #system 'clear'
-      #return greet, menu, useroptions
+
   end
 
 end 

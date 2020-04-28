@@ -48,6 +48,12 @@ end
 def calculate_cal
 
     puts ("-----------------------------------------------------------------------").colorize(:yellow)
+
+    cal_text = Artii::Base.new :font => 'slant'
+    puts (cal_text.asciify("Calculate")).colorize(:cyan)
+
+    puts ("-----------------------------------------------------------------------").colorize(:red)
+
     puts ("")
     foods = list_of_food
     count = 0 
@@ -84,9 +90,7 @@ def calculate_cal
   
     end
      
-    #puts ("")
-    #puts ("-----------------------------------------------------------------------").colorize(:red)
-    
+ 
     backtomenu
     
 

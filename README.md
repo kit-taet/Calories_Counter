@@ -9,7 +9,7 @@
 
 2. In Food List mode: The user get to see the food list that the app has.
 
-UI and UX
+<h1>UI and UX</h1>
 
 • When the user opens the terminal app, the user will be greeted with the name of the terminal app and the options that they can such such as 
 1. Calculate
@@ -22,18 +22,18 @@ UI and UX
 • If the user doesn't put the correct input the terminal will ask user to put the correct input again (the terminal will show the example)
     - Example: In the main menu if the user doesn't put the correct options (says "sdfsdf" instead of "1") - (By typing number 1, 2 or 3, the terminal will tell the user to Please choose their options again then the user gets to put a new input.)
 
-Control Flow Diagram
+<h1>Control Flow Diagram</h1>
 
 ![](https://i.imgur.com/q3Au9FX.jpg)
 
   
 
-#Implementation Plan
+<h1>Implementation Plan</h1>
 
 ![](https://i.imgur.com/CJ2X5Hb.jpg)
 
 
-Testing
+<h1>Testing</h1>
 
 |   Feature        | What it is          | Expected Outcome  | Actual Outcome          | Issue  |
 | ------------- |:-------------:| -----:|:-------------:| -----:|

@@ -71,11 +71,13 @@ end
 
 
 def list
+    
+    puts ("-----------------------------------------------------------------------").colorize(:yellow)
 
     food_list = Artii::Base.new :font => 'slant'
     puts (food_list.asciify("Food List")).colorize(:cyan)
 
-    puts ("-----------------------------------------------------------------------").colorize(:yellow)
+    puts ("-----------------------------------------------------------------------").colorize(:red)
     puts ("")
     
     foodlist_file = File.open("./classes/foodlist.txt", "r")
@@ -84,28 +86,13 @@ def list
 
     write_foodlist(foods);
     
-    # puts "1. Jasmine Rice - 1 Serve is 160 caloriees"
-    # puts "2. Banana 1 - Serve is 105 caloriees"
-    # puts "3. KFC Crunchy Twister Wrap - 1 Serve is 610 caloriees"
-    # puts "4. KFC Fries (Regular) - 1 Serve is 308 caloriees"
-    # puts "5. Apple pie (McDonald) 1 Serve is 250 caloriees"
-    # puts "6. Broccoli - 1 cup is 31 caloriees"
-    # puts "7. Spinach - 100g is 23 caloriees"
-    # puts "8. Caesar Salad - 100g is 44 caloriees"
 
 
     puts ("")
     puts ("-----------------------------------------------------------------------").colorize(:red)
     
     backtomenu
-    # puts "Press enter button to go back to the menu".colorize(:red)
-    # userback = gets.chomp()
-
-    # if userback == "Back"
-    #     return greet, menu, useroptions
-    # else 
-    #     puts "Press type 'Back' if you want to go back to the main menu".colorize(:red)
-    # end
+ 
 
 end
 
