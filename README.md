@@ -1,4 +1,5 @@
 Statement of Purpose and Scope
+
 • The Purpose of this terminal app is to do the quick calories intake for the user by the user put down what they have been eatten from the list and we will do the calculate for you.
 • This terminal will help the users improve their health by calculate the intake from the user then the terminal will help the user to see if they're eating too much already or not. Of course, it's better if the users don't reach or go over the daily calories intake (2000 calories), but this is of course will have to do it with regular exercises.
 • The traget audience of this terminal app will be the user who are wanted to have a quick calories check or the users who may try to lose some weight to see if they have been eating over the daily calories intake or not.
