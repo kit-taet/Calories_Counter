@@ -11,8 +11,6 @@ require_relative "./classes/foodlist.rb"
 
 
 
-
-
 #greet user
 def greet
   hm = Artii::Base.new :font => 'slant'
@@ -39,46 +37,42 @@ end
 #get user options
 def useroptions
 
-userop = gets.chomp
+userop = gets.to_i
 
-while userop
+  case userop
 
-    case userop
+    when 1
+      calculate_cal
 
-            when "1"
-              calculate_cal
-              clear
+    when 2
+      list
 
-            when "2"
-              list
-              clear
-
-            when "3"
-              sleep 0.5
-              system 'clear'
-              doneplaying = Artii::Base.new :font => 'slant'
-              puts (doneplaying.asciify("Thankyou For Using")).colorize(:cyan)
-              return 0
-              break
-
-            else  
-              puts "Please choose your options again 1,2 or 3".colorize(:red)
-              puts ("-----------------------------------------------------------------------")
-              sleep 0.5
-              system 'clear'
-              return greet, menu, useroptions
+    when 3
+      sleep 0.5
+      system 'clear'
+      doneplaying = Artii::Base.new :font => 'slant'
+      puts (doneplaying.asciify("Thankyou For Using")).colorize(:cyan)
+      #return 0
+      #break
               
-            end
+    else  
+      puts "Please choose your options again 1,2 or 3".colorize(:red)
+      puts ("-----------------------------------------------------------------------")
+      #sleep 0.5
+      #system 'clear'
+      #return greet, menu, useroptions
   end
-end
 
-def clear
-  system "clear"
-end
+end 
 
-greet
-menu
-useroptions
-clear
+
+def main()
+  greet
+  menu
+  useroptions
+
+end 
+
+main()
 
 
