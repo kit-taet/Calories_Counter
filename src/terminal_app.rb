@@ -1,9 +1,7 @@
 require 'colorize'
 require 'tty-prompt'
 require 'artii'
-require 'rainbow'
 require 'colorized_string'
-require 'faker'
 
 
 require_relative "./classes/calculate.rb"
@@ -17,7 +15,7 @@ def greet
   puts (hm.asciify("Calories Counter")).colorize(:magenta)
 end
 
-
+#display menu
 def menu
 
   puts ("")
@@ -72,6 +70,7 @@ def main()
 
 end 
 
+#program starts here
 main()
 
 

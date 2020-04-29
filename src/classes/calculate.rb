@@ -1,9 +1,8 @@
 require 'colorize'
-require 'tty-prompt'
 require 'artii'
 require 'rainbow'
 require 'colorized_string'
-require 'faker'
+
 
 require_relative 'backtomenu.rb'
 
@@ -15,7 +14,7 @@ def user_request(foods,pending_cal)
 
     if foods[foodoption-1].servingtype == 'gm'
         puts ("Please enter the serving as 100..200 gm ").colorize(:green)
-        servingsize = gets.to_f / 100
+        servingsize = gets.to_f / 100 #to_f = float
 
     else
         puts ("Please enter the serving/cup").colorize(:green)
@@ -30,7 +29,10 @@ def user_request(foods,pending_cal)
 
     pending = pending_cal - total_cal_food
 
-    total_consumed = 2000 - pending
+    #pending = amount of cal user eats
+    #total_consumed = cal left for user
+
+    total_consumed = 2000 - pending 
     puts ("Total || You have already ordered food with : "+total_consumed.to_s + " calorie" ).colorize(:green) 
         
     if (pending < 0 ) 
@@ -55,7 +57,7 @@ def calculate_cal
     puts ("-----------------------------------------------------------------------").colorize(:red)
 
     puts ("")
-    foods = list_of_food
+    foods = list_of_food   #display food list on the top
     count = 0 
     puts ("Please select options 1,2 .. 8  to choose food ")
     while count < foods.length
